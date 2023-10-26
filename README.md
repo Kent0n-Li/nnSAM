@@ -11,9 +11,11 @@ conda activate nnsam
 pip install git+https://github.com/ChaoningZhang/MobileSAM.git
 pip install timm
 pip install git+https://github.com/Kent0n-Li/nnSAM.git
-set MODEL_NAME=nnsam
 ```
 
+```bash
+set MODEL_NAME=nnsam
+```
 
 
 
