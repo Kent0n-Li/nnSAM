@@ -13,6 +13,7 @@ pip install timm
 pip install git+https://github.com/Kent0n-Li/nnSAM.git
 ```
 
+It is important to input "set MODEL_NAME=nnsam" before using it.
 ```bash
 set MODEL_NAME=nnsam
 ```
