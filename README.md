@@ -17,6 +17,19 @@ pip install git+https://github.com/Kent0n-Li/nnSAM.git
 set MODEL_NAME=nnsam
 ```
 
+```bash
+nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
+
+nnUNetv2_train DATASET_NAME_OR_ID UNET_CONFIGURATION FOLD [additional options, see -h]
+
+nnUNetv2_train DATASET_NAME_OR_ID UNET_CONFIGURATION FOLD --val --npz
+
+nnUNetv2_train DATASET_NAME_OR_ID 2d FOLD
+
+nnUNetv2_train DATASET_NAME_OR_ID 3d_fullres FOLD
+
+nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_NAME_OR_ID -c CONFIGURATION --save_probabilities
+```
 
 
 ## How to get started?
