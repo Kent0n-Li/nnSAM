@@ -20,7 +20,7 @@ def download_model(url,destination):
 
     chunk_size = 8192  # Size of each chunk in bytes
 
-    response = requests.get(url, stream=True)
+    response = requests.get(url, stream=True, timeout=30)
 
     if response.status_code == 200:
         with open(destination, "wb") as file:
